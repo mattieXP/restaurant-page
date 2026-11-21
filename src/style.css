@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "Playfair Display";
+    src:
+        url("./fonts/PlayfairDisplay-Regular.woff") format("woff"),
+        url("./fonts/PlayfairDisplay-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Mona";
+    src: 
+        url("./fonts/MonaSans-Regular.woff") format("woff"),
+        url("./fonts/MonaSans-Regular.woff2") format("woff2");
+}
+
+:root {
+
+}
+
+body {
+    font-family: "Mona";
+}
