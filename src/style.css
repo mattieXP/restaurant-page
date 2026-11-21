@@ -6,16 +6,29 @@
 }
 
 @font-face {
-    font-family: "Mona";
+    font-family: "Noto Sans";
     src: 
-        url("./fonts/MonaSans-Regular.woff") format("woff"),
-        url("./fonts/MonaSans-Regular.woff2") format("woff2");
+        url("./fonts/NotoSans-Regular.woff") format("woff"),
+        url("./fonts/NotoSans-Regular.woff2") format("woff2");
 }
 
 :root {
-
+--primary-color: rgb(241, 246, 248);
+--secondary-color: rgb(204, 204, 153);
 }
 
 body {
-    font-family: "Mona";
+    font-family: "Noto Sans";
+    background-image: url("./images/blue-background.jpeg");
+    background-size: cover;
+    color: var(--primary-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display", 'Times New Roman', Times, serif;
+    font-weight: 100;
+}
+
+.cta {
+    color: var(--secondary-color);
 }
