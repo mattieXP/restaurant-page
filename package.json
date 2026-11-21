@@ -12,6 +12,7 @@
   "type": "module",
   "devDependencies": {
     "html-webpack-plugin": "^5.6.8",
-    "webpack-cli": "^7.3.1"
+    "webpack-cli": "^7.3.1",
+    "webpack-dev-server": "^6.1.0"
   }
 }
