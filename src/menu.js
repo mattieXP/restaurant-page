@@ -1,3 +1,5 @@
+import { displayReservation } from "./reservation.js";
+
 export const displayMenu = function() {
     console.log("Hey Menu works");
 
@@ -144,6 +146,10 @@ export const displayMenu = function() {
     const menuCta = document.createElement("div");
     menuCta.id = "menu-cta";
     content.appendChild(menuCta);
+
+    menuCta.addEventListener("click", (event) => {
+        displayReservation();
+    });
     
     const info = document.createElement("p");
     info.textContent = "Please ask our team about today's fresh catch and seasonal specials.";

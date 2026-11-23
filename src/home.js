@@ -1,4 +1,5 @@
 import oystersImg from "./images/oysters.png";
+import { displayReservation } from "./reservation.js";
 
 export const displayHome  = function() {
     console.log("Home works!");
@@ -37,6 +38,10 @@ export const displayHome  = function() {
     firstCta.classList = "cta";
     firstCta.textContent = "Book a table";
     heroText.appendChild(firstCta);
+
+    firstCta.addEventListener("click", (event) => {
+        displayReservation();
+    });
 
     const legend = document.createElement("p");
     legend.classList = "legend";

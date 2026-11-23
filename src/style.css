@@ -122,6 +122,11 @@ button:hover {
     justify-self: center;
 }
 
+#hero-img:hover {
+    transition: transform .7s ease-in-out;
+    transform: rotate(-5deg);
+}
+
 .menu-item {
     margin-bottom: 30px;
 }
@@ -180,6 +185,6 @@ button:hover {
 
 footer {
     font-family: "Noto Thin", system-ui, 'Open Sans', 'Helvetica Neue', sans-serif;
-    display: flex;
     color: var(--primary-color);
+    padding-bottom: 10px;
 }
