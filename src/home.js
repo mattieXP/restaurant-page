@@ -5,6 +5,8 @@ export const displayHome  = function() {
 
     const content = document.querySelector("#content");
 
+    content.textContent = "";
+
     const heroSection = document.createElement("div");
     heroSection.id = "hero";
 

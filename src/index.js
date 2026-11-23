@@ -7,6 +7,9 @@ const homeBtn = document.querySelector("#home-btn");
 const menuBtn = document.querySelector("#food-menu-btn");
 const reservBtn = document.querySelector("#reserv-btn");
 
+//initilization on Home page
+displayHome();
+
 homeBtn.addEventListener("click", (event) =>{
     displayHome();
 });

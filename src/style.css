@@ -68,15 +68,19 @@ button:hover {
     font-size: 1.1rem;
 }
 
+.menu-btn:hover {
+    color: var(--secondary-color);
+}
+
 #content {
-    max-width: 1280px;
+    width: 1280px;
     font-family: "Noto Thin", system-ui, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 18px;
     background-image: url("./images/blue-background.jpeg");
     background-size: cover;
     color: var(--primary-color);
     border-radius: 3px;
-    padding: 50px 100px;
+    padding: 100px 100px;
     box-shadow: 3px 3px 10px black;
     margin: 50px 0px 50px;
 }
@@ -105,7 +109,7 @@ button:hover {
 }
 
 .legend {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
 }
 
 #hero {
@@ -135,9 +139,14 @@ button:hover {
     font-size: 0.95rem;
 }
 
+#menu-cta {
+    display: flex;
+    justify-content: space-between;
+}
+
 #reservation-block {
     margin-top: 50px;
-    background-color: var(--third-color);
+    background-color: #092531;
     border-radius: 3px;
     padding: 20px 50px;
     display: grid;
@@ -170,6 +179,7 @@ button:hover {
 }
 
 footer {
+    font-family: "Noto Thin", system-ui, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: flex;
     color: var(--primary-color);
 }

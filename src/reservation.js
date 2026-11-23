@@ -3,6 +3,8 @@ export const displayReservation = function() {
 
     const content = document.querySelector("#content");
 
+    content.textContent = "";
+
     const subtitle = document.createElement("p");
     subtitle.classList = "subtitle";
     subtitle.textContent = "Good food tastes even better when shared";

@@ -3,14 +3,21 @@ export const displayMenu = function() {
 
     const content = document.querySelector("#content");
 
+    content.textContent = "";
+
+    const subtitle = document.createElement("p");
+    subtitle.classList = "subtitle";
+    subtitle.textContent = "Tideline Menu";
+    content.appendChild(subtitle);
+
     const title = document.createElement("h1");
     title.textContent = "A Taste of the Ocean";
     content.appendChild(title);
 
-    const subtitle = document.createElement("p");
-    subtitle.class = "border-bottom";
-    subtitle.textContent = "Carefully selected ingredients, freshly prepared every day."
-    content.appendChild(subtitle);
+    const legend = document.createElement("p");
+    legend.class = "border-bottom";
+    legend.textContent = "Carefully selected ingredients, freshly prepared every day.";
+    content.appendChild(legend);
 
     const starters = document.createElement("h2");
     starters.textContent = "Starters";
@@ -133,8 +140,17 @@ export const displayMenu = function() {
             fondantDescription.classList = "description";
             fondantDescription.textContent = "Warm chocolate cake with a melting center and vanilla ice cream.";
             menuItem8.appendChild(fondantDescription);
+
+    const menuCta = document.createElement("div");
+    menuCta.id = "menu-cta";
+    content.appendChild(menuCta);
     
     const info = document.createElement("p");
     info.textContent = "Please ask our team about today's fresh catch and seasonal specials.";
-    content.appendChild(info);
+    menuCta.appendChild(info);
+
+    const secondCta = document.createElement("button");
+    secondCta.classList = "cta";
+    secondCta.textContent = "Book a table";
+    menuCta.appendChild(secondCta);
 }
